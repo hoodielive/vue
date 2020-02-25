@@ -2,6 +2,7 @@
 	<div>
 		<SearchBar @termChange="onTermChange"></SearchBar>
 		<VideoList :videos="videos"></VideoList>	
+		<VideoListItem :
 	</div>
 </template>
 
