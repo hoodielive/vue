@@ -5,10 +5,7 @@
   >
     <base-subheading>About Us</base-subheading>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tortor tellus. Donec maximus curs us pulvinar.
-      Proin vehicula eros mauris, sit amet rutrum libero vestibulum ac. Morbi ullamcorper eu lacus vulputate consect.
-      Etur vivamus sagittis accumsan quam eu malesuada. Proin et ante vel libero ultrices cursus. Donec felis leo, cu
-      rsus eget hendrerit at, congue nec enim.
+      The Iku Organization are good men restoring masculinity. This organization was created exists to restore rights of passage with an emphasis on teaching young men how to fish, hunt, handle firearms safely and more. We are a community oriented and can be seen helping the elderly, widows and orphans. If you are interested in joining our effort, please join now. If you would like to contribute, please donate. Thank you for stopping by.
     </p>
   </v-container>
 </template>

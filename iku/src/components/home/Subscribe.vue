@@ -17,7 +17,7 @@
             md5
           >
             <base-subheading class="mb-3">
-              Subscribe
+              Join
             </base-subheading>
             <p>
               Enter your email address to subscribe to this blog
