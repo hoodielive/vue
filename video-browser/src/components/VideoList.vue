@@ -1,13 +1,16 @@
 <template>
     <ul>
-        <VideoListItem v-for="(video, i) in videos" :key="video" :index="i">
-            {{ video.i }}
+        <VideoListItem 
+            v-for="video in videos" 
+            :key="video.etag" 
+        >
         </VideoListItem>
     </ul>
 </template>
 
 <script>
-import VideoListItem from './VideoListItem'
+import VideoListItem from './VideoListItem';
+
 export default {
     name: 'VideoList',
     components: {

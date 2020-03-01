@@ -2,23 +2,21 @@
 	<div>
 		<SearchBar @termChange="onTermChange"></SearchBar>
 		<VideoList :videos="videos"></VideoList>	
-		<VideoListItem :
 	</div>
 </template>
 
 <script>
 import axios from 'axios';
 import SearchBar from './components/SearchBar';
-import VideoList from './components/VideoList'
-import VideoListItem from './components/VideoListItem'
-const API_KEY = 'AIzaSyBguABYRDUZZzJ_NhziNo0ht48QJcEb9fQ';
+import VideoList from './components/VideoList';
+
+const API_KEY = 'AIzaSyCZwomMetrcmhDmeWyF3nc042ox_310UCM';
 
 export default {
 	name: 'App',
 	components: {
 		SearchBar,
-		VideoList,
-		VideoListItem
+		VideoList
 	},
 	data() {
 		return {
@@ -36,7 +34,7 @@ export default {
 				}
 			}).then(response => {
 				this.videos = response.data.items
-			});
+			}).catch(err => { console.log(err)});
 		}
 	}
 };
