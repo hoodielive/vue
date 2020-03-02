@@ -20,8 +20,8 @@
               Join
             </base-subheading>
             <p>
-              Enter your email address to subscribe to this blog
-              and receive notifications of new posts by email.
+              Enter your email address to subscribe to receive updates 
+              and for events that may be occurring in your area.
             </p>
 
             <v-layout
@@ -61,9 +61,9 @@
                     mdi-email-outline
                   </v-icon>
                 </v-list-tile-avatar>
-                <v-list-tile-title>EMAIL</v-list-tile-title>
+                <v-list-tile-title>Email</v-list-tile-title>
                 <v-list-tile-sub-title>
-                  THEARTOFTRAVEL@GMAIL.COM
+                  organizationiku@gmail.com
                 </v-list-tile-sub-title>
               </v-list-tile>
               <v-list-tile>
@@ -77,9 +77,9 @@
                     mdi-map-marker
                   </v-icon>
                 </v-list-tile-avatar>
-                <v-list-tile-title>ADDRESS</v-list-tile-title>
+                <v-list-tile-title>Address</v-list-tile-title>
                 <v-list-tile-sub-title>
-                  1234 WORLD DR. HERE, TX 76123
+                  HOWE, TX 76123
                 </v-list-tile-sub-title>
               </v-list-tile>
               <v-list-tile>
@@ -93,9 +93,9 @@
                     mdi-phone
                   </v-icon>
                 </v-list-tile-avatar>
-                <v-list-tile-title>PHONE</v-list-tile-title>
+                <v-list-tile-title>Phone</v-list-tile-title>
                 <v-list-tile-sub-title>
-                  555-789-1234
+                  555-123-1234
                 </v-list-tile-sub-title>
               </v-list-tile>
             </v-list>

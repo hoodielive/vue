@@ -16,7 +16,7 @@
           md7
           offset-md5
         >
-          <h1 class="display-3 font-weight-light">
+          <h1 class="display-2 font-weight-light">
             The Iku Organization
           </h1>
           <div class="subheading text-uppercase pl-2 mb-4">
