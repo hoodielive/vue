@@ -23,50 +23,5 @@
     "title": "We Inspire Youth",
     "category": "Store",
     "hero": "youth.jpg"
-  },
-  {
-    "title": "Trial By Fire",
-    "category": "Cooking",
-    "hero": "firepots.jpg"
-  },
-  {
-    "title": "Water Ventures",
-    "category": "Leisure",
-    "hero": "jellyfish.jpg"
-  },
-  {
-    "title": "Mt. Zekial",
-    "category": "Travel",
-    "hero": "mountaincabin.jpg"
-  },
-  {
-    "title": "Cozumel Caves",
-    "category": "Travel",
-    "hero": "lightcave.jpg"
-  },
-  {
-    "title": "Amazing Ireland",
-    "category": "Travel",
-    "hero": "greengrass.jpg"
-  },
-  {
-    "title": "Cabin Fever",
-    "category": "Travel",
-    "hero": "snowcabin.jpg"
-  },
-  {
-    "title": "To the ancient ruins",
-    "category": "Travel",
-    "hero": "ruins.jpg"
-  },
-  {
-    "title": "New fashion trends",
-    "category": "Travel",
-    "hero": "umbrella.jpg"
-  },
-  {
-    "title": "Go on a vacation",
-    "category": "Travel",
-    "hero": "adventurecave.jpg"
   }
 ]
