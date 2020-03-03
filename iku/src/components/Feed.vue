@@ -33,7 +33,6 @@
         text-xs-center
         subheading
       >
-        PAGE {{ page }} OF {{ pages }}
       </v-flex>
 
       <v-flex
