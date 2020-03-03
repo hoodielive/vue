@@ -1,6 +1,6 @@
 <template>
   <v-container pa-0>
-    <base-subheading>Newest Blog Posts</base-subheading>
+    <base-subheading>New Events</base-subheading>
     <v-layout
       v-for="(article, i) in articles.slice(11, 14)"
       :key="i"
@@ -19,7 +19,7 @@
         />
         <div>
           <div class="subheading">
-            Article Title
+            Event Title
           </div>
           <div class="caption">
             Date

@@ -12,12 +12,10 @@
         pa-3
       >
         <v-flex
-          xs12
-          md7
-          offset-md5
+        text-xs-center
         >
-          <h1 class="display-2 font-weight-light">
-            The Iku Organization
+          <h1 class="display-2 font-weight-dark">
+            THE IKU ORGANIZATION
           </h1>
           <div class="subheading text-uppercase pl-2 mb-4">
             Turning the heart of sons back to their fathers

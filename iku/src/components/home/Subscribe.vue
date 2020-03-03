@@ -79,7 +79,7 @@
                 </v-list-tile-avatar>
                 <v-list-tile-title>Address</v-list-tile-title>
                 <v-list-tile-sub-title>
-                  HOWE, TX 76123
+                  Howe, Tx 76123
                 </v-list-tile-sub-title>
               </v-list-tile>
               <v-list-tile>

@@ -36,7 +36,7 @@
               {{ value.title }}
             </h3>
             <div class="caption">
-              {{ value.author }}
+              {{ value.author }}<br>
             </div>
           </v-flex>
           <v-flex align-self-end>
