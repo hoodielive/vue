@@ -1,5 +1,5 @@
 {
-  "name": "@vuetify-theme/blog",
+  "name": "iku",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,13 +20,13 @@
     "@vue/cli-plugin-babel": "^3.3.0",
     "@vue/cli-plugin-e2e-cypress": "^3.3.0",
     "@vue/cli-plugin-eslint": "^3.3.0",
-    "@vue/cli-plugin-unit-jest": "^4.2.3",
-    "@vue/cli-service": "^4.2.3",
+    "@vue/cli-plugin-unit-jest": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^25.1.0",
+    "babel-jest": "^23.6.0",
     "eslint": "^5.8.0",
     "eslint-config-vuetify": "*",
     "eslint-plugin-vue": "^5.0.0",

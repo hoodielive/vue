@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Camping",
+    "category": "Apply",
+    "hero": "camping.jpg"
+  },
+  {
+    "title": "Fishing",
+    "category": "Events",
+    "hero": "fishing.jpg"
+  },
+  {
+    "title": "The Restoration Begins",
+    "hero": "restoration.jpg",
+    "prominent": true
+  },
+  {
+    "title": "Hunting",
+    "category": "Contact",
+    "hero": "hunting_training.jpg"
+  },
+  {
+    "title": "We Inspire Youth",
+    "category": "Store",
+    "hero": "youth.jpg"
+  }
+]
