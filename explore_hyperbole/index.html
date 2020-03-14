@@ -1,0 +1,113 @@
+<html>
+    <title>Hyperbole</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js'></script>
+
+    <style>
+    </style>
+    <body>
+        <div id="app">
+            <h1> Color Revealed: {{ msg }}</h1> 
+        </div>
+
+        <div id="app2">
+            <h1> What do you have to say? {{ msg }} </h1>
+        </div>
+
+        <div id="app3">
+            <span v-if="seen">Now you see me</span>
+        </div>
+
+        <div id="app4">
+            <ul>
+                <li v-for="link in links" v-bind:key='link' style="list-style: none;">{{ link.text }}</li>
+            </ul>
+        </div>
+
+        <div id="app5">
+            <ol>
+                <todo-item
+                    v-for="item in groceryList"
+                    v-bind:todo="item"
+                    v-bind:key="item.id"
+                ></todo-item>
+            </ol>
+        </div>
+
+        <div id="app6">
+            <ol>
+                <heavenly-link
+                    v-for="link in hellLinks"
+                    v-bind:hell="link"
+                    v-bind:key="link.id"
+                ></heavenly-link> 
+            </ol>
+        </div>
+        <script>
+            var app = new Vue({
+                el: "#app", 
+                data: {
+                    msg: "Red"
+                }
+            })
+
+            var app2 = new Vue({
+                el: "#app2", 
+                data: {
+                    msg: "Word Word Word!"
+                }
+            })
+
+            var app3 = new Vue({
+                el: "#app3", 
+                data: {
+                    seen: true
+                }
+            })
+
+            var app4 = new Vue({
+                el: '#app4', 
+                data: {
+                    links: [
+                        { text: 'https://google.com'},
+                        { text: 'https://chrome.com'},
+                        { text: 'https://linux.com'},
+                    ]
+                }
+            })
+
+            Vue.component('todo-item', {
+                props: ['todo'],
+                template: '<li> {{ todo.text }}</li>'
+            })
+
+            Vue.component('heavenly-link', {
+                props: ['hell'],
+                template: '<li> {{ hell.text }}</li>'
+            })
+
+            var app5 = new Vue({
+                el: '#app5', 
+                data: {
+                    groceryList: [
+                        { id: 0, text: 'Vegatables'},
+                        { id: 1, text: 'Cheese'},
+                        { id: 0, text: 'Whatever else humans eat'}
+                    ]
+                }
+            })
+
+            var app6 = new Vue({
+                el: '#app6', 
+                data: {
+                    hellLinks: [
+                        { id: 100, text: 'Orobas'},
+                        { id: 101, text: 'Paimon'},
+                        { id: 102, text: 'Baal'}
+                    ]
+                }
+            })
+
+        </script>
+
+    </body>
+</html>
