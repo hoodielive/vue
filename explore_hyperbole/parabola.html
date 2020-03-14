@@ -1,0 +1,34 @@
+<html>
+    <title>Lets Get it Right</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js'></script>
+
+    <body>
+        <div id="app1">
+            <ol>
+                <following
+                    v-for="follow in linksFollow"
+                    v-bind:follow="follow"
+                    v-bind:key="follow.id"
+                ></following>
+            </ol>
+        </div>
+        
+    <script>
+        Vue.component('following', {
+            props: ['follow'],
+            template: '<li> {{ follow.text }} </li>'
+        })
+
+        var app = new Vue({
+          el: '#app1', 
+          data: {
+              linksFollow: [
+                  { id: 0, text: 'Um' },
+                  { id: 1, text: 'Um Yes' },
+                  { id: 2, text: 'Um No' }
+              ]
+          }  
+        })
+    </script>
+    </body>
+</html>
