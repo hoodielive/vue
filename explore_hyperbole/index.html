@@ -10,7 +10,8 @@
         </div>
 
         <div id="app2">
-            <h1> What do you have to say? {{ msg }} </h1>
+            <h2> What do you have to say: </h2>
+            <p>{{ msg }} </p>
         </div>
 
         <div id="app3">
@@ -41,6 +42,19 @@
                     v-bind:key="link.id"
                 ></heavenly-link> 
             </ol>
+        </div>
+        <div id="app7">
+            <ol>
+                <shaolin-techniques
+                    v-for="technique in techniques"
+                    v-bind:technique="technique"
+                    v-bind:key="technique.id"
+                ></shaolin-techniques>
+            </ol>
+        </div>
+
+        <div id="app8">
+            <p> {{ paragraph }}</p>
         </div>
         <script>
             var app = new Vue({
@@ -106,7 +120,29 @@
                     ]
                 }
             })
+            
+            Vue.component('shaolin-techniques', {
+                props: ['technique'],
+                template: '<li> {{ technique.text }} </li>'
+            })
 
+            var app7 = new Vue({
+                el: '#app7',
+                data: {
+                    techniques: [
+                        { id: 0, text: "Drunken Fist" }, 
+                        { id: 1, text: "Low hand Fist" }, 
+                        { id: 2, text: "Snake Fist" }
+                    ]
+                }
+            })
+
+            var app8 = new Vue({
+                el: '#app8', 
+                data: {
+                    paragraph: "I am the one and only grudge! "
+                }
+            })
         </script>
 
     </body>
