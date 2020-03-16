@@ -38,33 +38,17 @@
     data: () => ({
       items: [
         {
-          href: '#!',
+          href: 'http://www.twitter.com',
           icon: 'mdi-twitter'
         },
         {
-          href: '#!',
+          href: 'http://www.instagram.com',
           icon: 'mdi-instagram'
         },
         {
-          href: '#!',
+          href: 'http://www.facebook.com',
           icon: 'mdi-facebook'
         },
-        {
-          href: '#!',
-          icon: 'mdi-google-plus'
-        },
-        {
-          href: '#!',
-          icon: 'mdi-reddit'
-        },
-        {
-          href: '#!',
-          icon: 'mdi-discord'
-        },
-        {
-          href: '#!',
-          icon: 'mdi-pinterest'
-        }
       ]
     })
   }
