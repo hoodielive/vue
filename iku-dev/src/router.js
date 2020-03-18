@@ -22,7 +22,7 @@ export default new Router({
       component: About
     },
     {
-      path: '/apply', 
+      path: '/Apply', 
       name: 'apply', 
       component: Apply
     }
