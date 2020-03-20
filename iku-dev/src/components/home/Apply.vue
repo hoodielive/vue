@@ -1,46 +1,73 @@
 <template>
-    <div>
-        <br>
-        <h2> {{ name }}</h2>
-        <br>
-        <p>{{ msg }}</p>
-        <ol>
-            <li>Applicant must have no felonies.</li>
-            <li>Applicant must provide a DNA ancestry test.</li>
-            <li>Applicant must make a 500.00 application fee.</li>
-        </ol>
+    <div id="register" class="container py-4">
+        <div class="row">
+            <div class="col-12">
+                <form @submit.prevent="onSubmit">
+                    <BaseInput
+                        label="First Name:"
+                        v-model="form.firstName"
+                    />
+                    <BaseInput
+                        label="Last Name:"
+                        v-model="form.lastName"
+                    />
+                    <BaseInput
+                        label="Email:"
+                        v-model="form.email"
+                        type="email"
+                    />
+                    <div class="form-group">
+                        <button
+                            :disabled="!formIsValid" 
+                            type="submit"
+                            class="btn btn-primary"
+                        >Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
+import axios from 'axios';
+import BaseInput from '@/components/BaseInput'
+import BaseSelect from '@/components/BaseSelect'
 
 export default {
-    data () {
+    name: 'register',
+    components: { BaseInput, BaseSelect },
+    data() {
         return {
-            name: "Application Requirements",
-            msg: "In order to make application to this faternity you must provide the following:",
-            reqs: [
-                { id: 0, text: 'Applicant must have no felonies.'},
-                { id: 1, text: 'Applicant must provide a DNA ancestry test.'},
-                { id: 2, text: 'Applicant must make a 500.00 application fee.'}
-            ]
+            form: {
+                firstName: '', 
+                lastName: '',
+                email: '',
+            }
         }
     },
+    computed: {
+        formIsValid() {
+            return this.form.firstName.length > 0 && this.form.lastName.length > 0 && this.form.email.length > 0;
+        }
+    },
+    methods: {
+        onSubmit() {
+            if ( !this.formIsValid ) return;
+
+            axios.post('http://localhost:3000/dolphins', { params: this.form }).then(response => {
+                console.log('Form has been posted.', response)
+            }).catch(err => {
+                console.log('An error occured', err)
+            })
+        }
+    }
 };
 </script>
 
-<style scoped>
-   h2  {
-       text-align: center;
-   } 
-
-   p {
-       text-align: center;
-   }
-
-   ol  {
-       text-align: left;
-       margin-left: 485px;
-   }
-   
+<style>
+        form, button, input, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+}
 </style>
