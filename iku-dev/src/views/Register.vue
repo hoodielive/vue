@@ -8,7 +8,6 @@
   export default {
     name: 'Apply',
     components: {
-      RegisterPage: () => import('@/components/home/Apply')
     }
   }
 </script>

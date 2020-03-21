@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Register from './views/Register.vue'
 import About from '@/components/home/About'
-import Apply from '@/components/home/Apply'
 
 Vue.use(Router)
 
@@ -20,11 +19,6 @@ export default new Router({
       path: '/about', 
       name: 'about', 
       component: About
-    },
-    {
-      path: '/Apply', 
-      name: 'apply', 
-      component: Apply
     }
   ]
 })
