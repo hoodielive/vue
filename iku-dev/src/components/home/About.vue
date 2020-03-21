@@ -13,7 +13,7 @@
     <br>
     <v-container fluid>
       <v-row>
-        <v-col cols="4">
+        <v-col cols="12">
           <v-row
             :align="alignment" 
             :justify="justify"
