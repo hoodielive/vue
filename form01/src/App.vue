@@ -2,7 +2,7 @@
   <div id="app" class="container py-4">
     <div class="row">
       <div class="col-12">
-        <form>
+        <form @submit.prevent="onSubmit">
           <div class="form-group">
             <label>First Name:</label>
             <input
@@ -41,6 +41,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'app',
   data() {
@@ -50,6 +52,28 @@ export default {
         lastName: '',
         email: ''
       }
+    }
+  },
+  methods: {
+    onSubmit() {
+      if (!this.formIsValid) return
+      axios
+        .post('http://localhost:3000/dolphins',
+        { params: this.form })
+        .then(response => {
+          console.log('Form has been posted', response)
+        }).catch(err => {
+          console.log('An error has occurred', err)
+        });
+    }
+  },
+  computed: {
+    formIsValid() {
+      return (
+        this.form.firstName.length > 0 &&
+        this.form.lastName.length > 0 &&
+        this.form.email.length > 0
+      )
     }
   }
 }
