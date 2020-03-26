@@ -31,7 +31,10 @@
           </div>
 
           <div class="form-group">
-            <button class="btn btn-primary">Submit</button>
+            <button
+              :disabled="!formIsValid"
+              class="btn btn-primary"
+              >Submit</button>
           </div>
         </form>
       </div>
@@ -56,14 +59,15 @@ export default {
   },
   methods: {
     onSubmit() {
-      if (!this.formIsValid) return
+      if (!this.formIsValid) return;
       axios
-        .post('http://localhost:3000/dolphins',
+        .post('http://localhost:3000/users',
         { params: this.form })
         .then(response => {
-          console.log('Form has been posted', response)
+          console.log('Form has been posted',
+          response);
         }).catch(err => {
-          console.log('An error has occurred', err)
+          console.log('An error has occurred', err);
         });
     }
   },
