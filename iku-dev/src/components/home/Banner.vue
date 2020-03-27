@@ -28,7 +28,7 @@
             >
               Join
             </v-btn>
-          </router-link>
+          </router-link*
           <v-btn
             color="secondary"
             depressed
@@ -41,3 +41,13 @@
     </v-img>
   </base-card>
 </template>
+
+<script>
+export default {
+  components: {
+      Apply: () => import('@/components/home/Apply')
+  }
+}
+
+
+</script>

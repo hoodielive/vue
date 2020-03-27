@@ -13,7 +13,6 @@
 <script>
   export default {
     name: 'Home',
-
     components: {
       About: () => import('@/components/home/About'),
       Articles: () => import('@/components/home/Articles'),

@@ -53,12 +53,7 @@ export default {
     methods: {
         onSubmit() {
             if ( !this.formIsValid ) return;
-
-            axios.post('http://localhost:3000/dolphins', { params: this.form }).then(response => {
-                console.log('Form has been posted.', response)
-            }).catch(err => {
-                console.log('An error occured', err)
-            })
+            console.log('Clicked!')
         }
     }
 };
