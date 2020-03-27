@@ -19,6 +19,7 @@
       Articles: () => import('@/components/home/Articles'),
       Banner: () => import('@/components/home/Banner'),
       Social: () => import('@/components/home/Social'),
+      Apply: () => import('@/components/home/Apply')
     }
   }
 </script>

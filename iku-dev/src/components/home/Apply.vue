@@ -18,7 +18,7 @@
                     />
                     <div class="form-group">
                         <button
-                            :disabled="!formIsValid" 
+                            :disabled="!formIsValid"
                             type="submit"
                             class="btn btn-primary"
                         >Submit</button>
@@ -31,16 +31,15 @@
 
 <script>
 import axios from 'axios';
-import BaseInput from '@/components/BaseInput'
-import BaseSelect from '@/components/BaseSelect'
+import BaseInput from '@/components/home/BaseInput'
 
 export default {
     name: 'register',
-    components: { BaseInput, BaseSelect },
+    components: { BaseInput },
     data() {
         return {
             form: {
-                firstName: '', 
+                firstName: '',
                 lastName: '',
                 email: '',
             }

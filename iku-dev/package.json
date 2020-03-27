@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
     "vue": "^2.6.6",
     "vue-material-design-icons": "^4.4.0",
     "vue-router": "^3.0.1",

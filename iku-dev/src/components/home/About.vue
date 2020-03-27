@@ -4,7 +4,7 @@
     tag="section"
   >
     <base-subheading >
-      <h4>About Us</h4> 
+      <h4>About Us</h4>
     </base-subheading>
     <p>
       The Iku Organization are men restoring masculinity. This organization exists to restore rights of passage with an emphasis on teaching young men how to fish, hunt, handle firearms safely and more. We are a community oriented and can be seen helping the elderly, widows and orphans. If you are interested in joining our effort, please join now. If you would like to contribute, please donate. Thank you for stopping by.
@@ -15,15 +15,15 @@
       <v-row>
         <v-col cols="12">
           <v-row
-            :align="alignment" 
+            :align="alignment"
             :justify="justify"
             class="ma-3 pa-6"
             outlined
             tile
           >
-           
-        <v-img 
-           
+
+        <v-img
+
           class="white--text align-end"
           src="../../assets/articles/hunting01.jpg"
         >
@@ -47,7 +47,6 @@
             More
           </v-btn>
         </v-card-actions>
-      </v-card>
           </v-row>
         </v-col>
       </v-row>
@@ -89,5 +88,5 @@
   h4 {
     text-align: center;
   }
-  
+
 </style>
