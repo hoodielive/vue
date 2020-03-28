@@ -17,7 +17,7 @@ Vue.component('task-list', {
 })
 
 Vue.component('task', {
-  template: <li><slot></slot></li>
+  template: <li><v-slot></v-slot></li>
 })
 
 new Vue({
