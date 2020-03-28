@@ -8,25 +8,12 @@
 </head>
 <body>
 
-    <div id="ct">
-        <button-counter></button-counter>
+    <div id="root">
+      <news>Love</news>
+      <news>Joy</news>
+      <news>Peace</news>
     </div>
 
-
-    <script>
-        Vue.component('button-counter', {
-            data() {
-                return {
-                    count: 0
-                }
-            }, 
-            template: '<button v-on:click="count++">You Click Me {{ count }} times!</button>'
-        })
-
-        var ct = new Vue({
-            el: '#ct'
-        })
-
-    </script>
+<script src="main.js"> </script>
 </body>
 </html>
