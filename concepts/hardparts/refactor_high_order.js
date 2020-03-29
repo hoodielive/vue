@@ -7,6 +7,7 @@ function copyArrayAndManipulate(array, instructions)
     }
     return output
 }
+
 const result = copyArrayAndManipulate([1,2,3], input => input * 2)
 
 console.log(result)
