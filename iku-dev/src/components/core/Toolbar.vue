@@ -1,5 +1,6 @@
 <template>
   <v-toolbar
+    green
     app
     flat
   >

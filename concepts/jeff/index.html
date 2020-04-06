@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Untitled</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+
+		<div id="root">
+			<button v-bind:title="title">Hover over Me</button>
+		</div>
+
+		<script>
+			var app = new Vue({
+				el: '#root', 
+				data: {
+					title: "Now you are being set from Javascript."
+				}
+			})
+		</script>
+	</body>
+</html>

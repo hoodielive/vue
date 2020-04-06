@@ -1,0 +1,12 @@
+
+Pair Programming
+- Tackle blocks with partner.
+- Stay focused on the problem.
+- Refine technical communication.
+- Collaborate to solve problem.
+
+Researcher
+- Avoids blocks by reading everything they can find on their block/bug.
+
+StackOverflower
+- Uses code snippets to fix bug without knowing how they work.

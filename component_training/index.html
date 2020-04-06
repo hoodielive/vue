@@ -4,29 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Components Training</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
 
-    <div id="ct">
-        <button-counter></button-counter>
+    <div id="root">
+        <task-list></task-list>
     </div>
 
-
-    <script>
-        Vue.component('button-counter', {
-            data() {
-                return {
-                    count: 0
-                }
-            }, 
-            template: '<button v-on:click="count++">You Click Me {{ count }} times!</button>'
-        })
-
-        var ct = new Vue({
-            el: '#ct'
-        })
-
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"> </script>
 </body>
 </html>

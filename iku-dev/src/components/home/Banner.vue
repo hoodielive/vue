@@ -20,13 +20,15 @@
           <div class="subheading text-uppercase pl-2 mb-4">
             Turning the heart of sons back to their fathers
           </div>
-          <v-btn
-            color="primary"
-            depressed
-            round
-          >
-            Join
-          </v-btn>
+          <router-link to="./Apply">
+            <v-btn
+              color="primary"
+              depressed
+              round
+            >
+              Join
+            </v-btn>
+          </router-link*
           <v-btn
             color="secondary"
             depressed
@@ -39,3 +41,13 @@
     </v-img>
   </base-card>
 </template>
+
+<script>
+export default {
+  components: {
+      Apply: () => import('@/components/home/Apply')
+  }
+}
+
+
+</script>
