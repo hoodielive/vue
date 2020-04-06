@@ -1,0 +1,32 @@
+[
+  {
+    "title": "About",
+    "category": "About",
+    "hero": "fishing.jpg"
+  },
+  {
+    "title": "Camping",
+    "category": "Apply",
+    "hero": "camping.jpg"
+  },
+  {
+    "title": "Events",
+    "category": "Events",
+    "hero": "fishing.jpg"
+  },
+  {
+    "title": "The Restoration Begins",
+    "hero": "restoration.jpg",
+    "prominent": true
+  },
+  {
+    "title": "Hunting",
+    "category": "Contact",
+    "hero": "hunting_training.jpg"
+  },
+  {
+    "title": "Purchase Items",
+    "category": "Store",
+    "hero": "youth.jpg"
+  }
+]
