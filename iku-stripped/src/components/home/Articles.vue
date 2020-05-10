@@ -9,7 +9,7 @@
 <script>
   export default {
     components: {
-      Feed: () => import('@/components/Feed')
+     // Feed: () => import('@/components/Feed')
     }
   }
 </script>
