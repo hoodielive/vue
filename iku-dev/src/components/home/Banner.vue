@@ -48,6 +48,4 @@ export default {
       Apply: () => import('@/components/home/Apply')
   }
 }
-
-
 </script>

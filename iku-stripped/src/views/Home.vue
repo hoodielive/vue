@@ -2,8 +2,8 @@
   <div id="home">
     <articles>
       <banner />
+			<disclosure />
     </articles>
-    <disclosure />
     <social />
   </div>
 </template>
@@ -11,7 +11,6 @@
 <script>
   export default {
     name: 'Home',
-
     components: {
       About: () => import('@/components/home/About'),
       Articles: () => import('@/components/home/Articles'),
