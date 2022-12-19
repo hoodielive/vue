@@ -54,3 +54,15 @@
       </div>
     </section>
 </template>
+
+<style scoped lang="scss">
+  .posts {
+    padding-top: 70px;
+  }
+  
+  .posts-type {
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+</style>
