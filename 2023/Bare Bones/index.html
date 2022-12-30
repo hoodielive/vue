@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vue Studies</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <div id="app" v-cloak>
+    <p>{{ fullName() }}</p>
+    <hr />
+    <label class="mr-2">First Name</label>
+    <input type="text" class="mr-4 bg-green-200 border border-4 border-green-600" :value="firstName"/>
+
+    <label class="mr-2" >Last Name</label>
+    <input type="text" placeholder="@larry" class="bg-green-200 border border-4 border-green-600" @input="updateLastName('Last Name event triggered', $event)">
+
+    <a :href="url">YouTube</a>
+    <p>{{ age }}</p>
+    <button type="button" @click="increment">Increment</button>
+    <button type="button" @click="age--">Decrement</button>
+   </div> 
+
+   <script src="https://unpkg.com/vue@3"></script>
+   <script src="app.js"></script>
+</body>
+</html>
