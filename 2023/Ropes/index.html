@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <title>Ropes</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: grid;
+            place-items: center;
+        }
+    </style>
     <!-- Tailwind CSS -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://unpkg.com/vue@3"></script>
-    <link rel="stylesheet" href="main.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="h-full grid place-items-center">
     <div id="app">
-        <app-button type="secondary" class="">Submit</app-button>
+        <app-button type="secondary">Submit</app-button>
     </div>
 
     <script type="module">
-        import App from 'components/App.js'
+        import App from './components/App.js'
+
+        Vue.createApp(App).mount('#app');
     </script>
 </body>
 </html>
