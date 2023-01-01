@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ropes</title>
+    <!-- Tailwind CSS -->
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://unpkg.com/vue@3"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body class="grid h-full bg-green-900 place-items-center">
+    <div id="app">
+
+    </div>
+
+    <script>
+        let app = {
+            components: {
+                'app-button': {
+                    mounted() {
+                        alert('hello whore!')
+                    }
+                },
+            }
+         }
+
+
+        Vue.createApp(app).mount("#app")
+    </script>
+</body>
+</html>
