@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quickstart</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app" class="text-green-400 font-bold flex items-center m-12 p-24">
+        {{ msg }}
+    </div>
+
+    <div id="app2">
+        <h1 class="text-purple-700 font-bold m-12 p-24 flex items-center"> {{ thug }} </h1>
+    </div>
+    <div id="app3"> 
+        <button @click="count++" class="bg-green-400 border shadow rounded text-3xl text-white">Count is: {{ count }}</button>
+    </div>
+    <script>
+        const { createApp } = Vue
+
+        const app = createApp({
+            data() {
+                return {
+                    msg: 'I do not know bro.',
+                }
+            },
+        }).mount('#app');
+
+        const app2 = createApp({
+            data() {
+                return {
+                    thug: 'You are not a thug!'
+                }
+            }
+        }).mount('#app2')
+        
+        const app3 = createApp({
+            data() {
+                return {
+                    reason: "Its because I have other plans.",
+                    count: 0,
+                }
+            }
+        }).mount('#app3')
+    </script> 
+</body>
+</html>
